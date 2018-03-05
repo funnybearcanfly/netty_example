@@ -10,6 +10,8 @@ public class ByteOperation {
 	public static void main(String[] args) {
 		slice();
 		copy();
+		getSet();
+		readWrite();
 	}
 
 	private static void slice() {

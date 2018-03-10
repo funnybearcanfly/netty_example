@@ -18,7 +18,7 @@ public class AbsIntegerEncoderTest extends TestCase {
 		assertTrue(channel.finish());
 		// read bytes
 		for (int i = 1; i < 10; i++) {
-			assertEquals(i, channel.readOutbound());
+			assertEquals(Integer.valueOf(i), channel.readOutbound());
 		}
 		assertNull(channel.readOutbound());
 	}
